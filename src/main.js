@@ -5,6 +5,12 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+// test interface function
+import { getCategory } from '@/apis/testAPI'
+getCategory().then(res => {
+    console.log(res);
+})
+
 
 const app = createApp(App)
 
