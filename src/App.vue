@@ -1,12 +1,23 @@
 <script setup>
+import { RouterView } from 'vue-router';
+
 
 </script>
 
 <template>
-   <el-button>Primary</el-button>
+   <!-- Level 1 route export component -->
+   <RouterView>
+    
+   </RouterView>
+   <div class = "test">
+    test scss
+   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.test{
+  color:$priceColor;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;

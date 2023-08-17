@@ -1,10 +1,12 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+
+//introduce initialization style
+import '@/styles/common.scss'
+
 // test interface function
 import { getCategory } from '@/apis/testAPI'
 getCategory().then(res => {
